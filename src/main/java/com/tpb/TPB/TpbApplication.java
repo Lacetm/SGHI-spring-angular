@@ -43,6 +43,13 @@ public class TpbApplication {
 			@RequestParam(value = "numeroConselho", required = true) String numeroConselho,
 			@RequestParam(value = "cns", required = true) String cns,
 			@RequestParam(value = "cbo", required = true) String cbo
-	)
+	){}
+
+	@GetMapping("/registrar_consulta")
+	public void registrar_consulta(
+			@RequestParam(value = "paciente", required = true) Integer registroPaciente,
+			@RequestParam(value = "medico", required = true) Integer registroMedico
+	){}
+
 
 }
